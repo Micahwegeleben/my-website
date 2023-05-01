@@ -1,0 +1,40 @@
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-style:normal;
+}
+
+section h2 {
+  color: #ff4500;
+  font-size: 1.5rem;
+}
+
+a[href="https://en.wikipedia.org/wiki/Driver%27s_license"] {
+  color: #0000FF;
+}
+
+ul > li {
+  text-shadow: 5px 2px 2px #baff99;
+
+}
+
+.shadow {
+	text-shadow: 5px 2px 2px #683942;
+}
+
+
+img[alt="This is a picture of a random man with this thumbs up to emphasize the point."] {
+  border: 5px solid #0000FF;
+}
+
+
+footer::before {
+  content: "That's all folks!";
+}
+
+
+h1, h2, h3, q {
+  font-weight: bold;
+  font-style: italic;
+}
