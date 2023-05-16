@@ -1,3 +1,7 @@
+#mobile_menu {
+  display: none;
+}
+
 :root {
   background-color: white;
 
@@ -8,78 +12,162 @@
   padding: 0px;
 }
 
+/* BODY */
+
+
 body {
   font-size: 16px;
-  width: 1000px;
+  width: 98%;
+  max-width: 1000px;
   margin: 0 auto;
   border: 3px solid #2386ff;
   font-family: Arial, sans-serif;
-  line-height: 1.5;
   font-style: normal;
   background-image: linear-gradient(0deg, #d4eaf9 0%, rgb(227, 219, 219) 50%, #d4eaf9 100%)
 }
 
+/*NAV*/
+#nav_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border-bottom: 3px double #2386ff;
+}
+
+#nav_menu ul li {
+  float: left;
+  width: 33.333%;
+  /*160/800*100*/
+}
+
+#nav_menu ul li a {
+  display: block;
+  text-align: center;
+  padding: 1em 0;
+  text-decoration: none;
+  background-color: #2386ff;
+  color: white;
+  font-weight: bold;
+  font-size: 115%;
+  border-radius: 40%;
+}
+
+#nav_menu a.current {
+  color: yellow;
+  font-size: 135%;
+}
+
+#nav_menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+#nav_menu ul ul li {
+  float: none;
+}
+
+#nav_menu ul li:hover>ul {
+  display: block;
+}
+
+#nav_menu>ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*HEADER*/
+header {
+  border-bottom: .3% solid #2386ff;
+  clear: left;
+  padding: 2em 0 1em 0;
+}
 
 header aside {
   float: left;
-}
-header section {
-  float: right;
-  padding-right: 75px;
+
 }
 
-header {
-  border-bottom: 3px solid #2386ff;
-  clear: left;
+header section {
+  float: right;
+  padding-right: 7.5%;
+  /*75/1000*100*/
 }
 
 header h1 {
   text-align: left;
-  padding-left: 200px;
-  scale: 150%;
-  padding-top: 10px;
+  padding-left: 3%;
+  padding-bottom: 1%;
+  font-size: 400%;
   color: white;
 }
 
+header img {
+  max-width: 30%;
+  min-width: 100px;
+}
+
+/*MAIN*/
 main {
   clear: left;
-  height: 550px;
+  border-top: 3px solid #2386ff;
+
 }
 
 main section {
   float: right;
-  padding: 20px;
-  padding-right: 75px;
+  padding: 2%;
+  padding-right: 7.5%;
 }
 
 main aside {
-  width: 215px;
+  width: 21.5%;
   float: left;
-  padding-left: 50px;
+  padding: 0 0 0 5%;
 }
 
+main aside img {
+  padding-bottom: 1.25em;
+}
 
+/*FOOTER*/
+footer::before {
+  content: "That's all folks!";
+}
+
+footer {
+  clear: both;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  border-top: 3px solid #2386ff;
+}
+
+li {
+  padding-top: 1.5%;
+}
+
+/* OTHER*/
 section h2 {
   color: #2386ff;
-	padding: 3px 0;
-	border-top: 3px double  #2386ff;
-	border-bottom: 3px double #2386ff;
-	border-left: 3px double #2386ff;
-	border-right: 3px double #2386ff;
-	text-align: center;
-	border-radius: 270px;
-	box-shadow: 5px 2px 3px #edeb89;
+  padding: 2% 0 2% 0;
+  border-top: .1em double #2386ff;
+  border-bottom: .1em double #2386ff;
+  border-left: .1em double #2386ff;
+  border-right: .1em double #2386ff;
+  text-align: center;
+  border-radius: 270px;
+  box-shadow: .25em .15em .3em #55552d;
 
 }
 
-aside ol {
-  padding: 30px;
-}
 
 a[href="https://en.wikipedia.org/wiki/Driver%27s_license"] {
   color: #2386ff;
 }
-
 
 
 .shadow {
@@ -92,22 +180,44 @@ img[alt="This is a picture of a random man with this thumbs up to emphasize the 
   border: 5px solid #2386ff;
 }
 
+@media only screen and (max-width: 560px) {
 
-footer::before {
-  content: "That's all folks!";
+  header h1{
+    font-size: 230% !important;
+  }
 }
 
-footer {
-  padding-top: 10px;
-  text-align: center;
-  border-top: 3px solid #2386ff;
+@media only screen and (max-width:740px) {
+  
+  header h1{
+    font-size: 300%;
+  }
+  header aside {
+    float: none;
+  }
+
+  header section {
+    float: none;
+  }
+
+  #mobile_menu {
+    display: block;
+  }
+
+  #nav_menu {
+    display: none;
+  }
 }
 
+@media only screen and (max-width:800px) {
 
-h1,
-h2,
-h3,
-q {
-  font-weight: bold;
-  font-style: italic;
+  main aside {
+    float: none;
+  }
+
+  main section {
+    float: none;
+
+    padding-left: 5%;
+  }
 }
