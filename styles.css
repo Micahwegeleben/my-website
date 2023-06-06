@@ -1,13 +1,10 @@
 /*INIT*/
 
 @font-face {
-	font-family: cooper;
-	src: url("/fonts/COOPBL.TTF");
+  font-family: cooper;
+  src: url("/fonts/COOPBL.TTF");
 }
 
-#mobile_menu {
-  display: none;
-}
 
 /*BG IMG*/
 .background {
@@ -16,12 +13,13 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 1em;
 }
 
 /* HEADER*/
 
 header h1 {
-	font-family: cooper;
+  font-family: cooper;
   text-align: center;
   background: rgba(100, 160, 190, .6);
 }
@@ -41,7 +39,7 @@ main {
 }
 
 main h2 {
-	font-family: cooper;
+  font-family: cooper;
   font-size: 340%;
   background: rgba(100, 160, 190, .6);
   text-align: center;
@@ -60,7 +58,7 @@ main p.two {
   background: rgba(100, 160, 190, .6);
   font-size: 150%;
   width: 30%;
-  padding: 1em 4em;
+  padding: .9em 4em;
   text-align: center;
 }
 
@@ -70,37 +68,6 @@ footer li {
   list-style-type: none;
 }
 
-/*NAV MENU*/
-#nav_menu {
-  display: flex;
-  align-items: row;
-  justify-content: space-between;
-  margin-top: 1em;
-}
-
-#nav_menu h1 {
-  list-style-type: none;
-}
-
-#nav_menu h1 a {
-  padding: 0.5em 1.65em;
-  text-decoration: none;
-  background-color: #2386ff;
-  color: white;
-  font-weight: bold;
-  font-size: 115%;
-  border-radius: 20%;
-}
-
-#nav_menu a.current {
-  color: yellow;
-  font-size: 120;
-}
-
-
-#nav_menu h1 a:hover {
-  color: green;
-}
 
 
 /* FOOTER*/
@@ -114,14 +81,28 @@ footer {
 }
 
 /*MEDIA*/
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1250px) {
+
+  main p.two {
+    padding: .4em 4em;
+  }
 
   main h2 {
     width: 50%;
   }
-
   main p.one {
     width: 50%;
+
+  }
+}
+
+
+@media only screen and (max-width:850px) {
+
+
+
+  main p.one {
+    width: 60%;
 
   }
 }
@@ -132,28 +113,32 @@ footer {
     width: 60%;
   }
 
+  main p.one {
+    width: 70%;
+
+  }
+
   header h1 {
     font-size: 300%;
   }
 
-
-  #mobile_menu {
-    display: block;
-  }
-
-  #nav_menu {
-    display: none;
-  }
 }
 
-@media only screen and (max-width:520px) {
+@media only screen and (max-width:660px) {
 
   main h2 {
-    width: 90%;
+    width: 100%;
   }
 
   main p.one {
-    width: 70%;
+    width: 90%;
 
+  }
+}
+
+@media only screen and (max-width:550px) {
+
+  footer {
+    position: relative;
   }
 }

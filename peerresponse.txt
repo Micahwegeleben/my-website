@@ -1,0 +1,6 @@
+Fix the landing page footer.
+Fix the white sliver on the top of the main page
+Make each flyer different in theme (i removed multiple flyers)
+Fix yellow shadow for readability on flyer 1
+Space around for nav bar (redid navbar entirely, and pulled it out of the flyer)
+

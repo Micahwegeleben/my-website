@@ -1,0 +1,54 @@
+
+body {
+    margin: 0;
+  }
+
+
+
+#mobile_menu {
+    display: none;
+}
+
+#nav_menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: rgb(62, 64, 90);
+
+}
+
+#nav_menu h1 {
+    list-style-type: none;
+}
+
+#nav_menu h1 a {
+    padding: 0.5em 1.65em;
+    text-decoration: none;
+    background-color: rgb(64, 74, 212);
+    color: white;
+    font-weight: bold;
+    font-size: 130%;
+    border-radius: 20%;
+}
+
+#nav_menu a.current {
+    color: yellow;
+    font-size: 150%;
+}
+
+
+#nav_menu h1 a:hover {
+    color: green;
+}
+
+
+@media only screen and (max-width:750px) {
+
+    #mobile_menu {
+        display: block;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+}
