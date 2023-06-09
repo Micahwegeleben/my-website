@@ -1,0 +1,144 @@
+/*INIT*/
+
+@font-face {
+    font-family: cooper;
+    src: url("/fonts/COOPBL.TTF");
+  }
+  
+  
+  /*BG IMG*/
+  .background {
+    background-image: url(images/ktacpool.png);
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+  }
+  
+  /* HEADER*/
+  
+  header h1 {
+    font-family: cooper;
+    text-align: center;
+    background: rgba(100, 160, 190, .6);
+  }
+  
+  /* BODY */
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main h2 {
+    font-family: cooper;
+    font-size: 340%;
+    background: rgba(100, 160, 190, .6);
+    text-align: center;
+    width: 30%;
+  }
+  
+  main p {
+    background: rgba(100, 160, 190, .6);
+    font-size: 150%;
+    width: 30%;
+    padding: 1em 10em;
+    text-align: center;
+  }
+  
+  main p.two {
+    background: rgba(100, 160, 190, .6);
+    font-size: 150%;
+    width: 30%;
+    padding: .9em 4em;
+    text-align: center;
+  }
+  
+  /* FOOTER*/
+  
+  footer li {
+    list-style-type: none;
+  }
+  
+  
+  
+  /* FOOTER*/
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 120%;
+    text-align: center;
+    background: rgba(100, 160, 190, .6);
+  }
+  
+  /*MEDIA*/
+  @media only screen and (max-width:1250px) {
+  
+    main p.two {
+      padding: .4em 4em;
+    }
+  
+    main h2 {
+      width: 50%;
+    }
+    main p.one {
+      width: 50%;
+  
+    }
+  }
+  
+  
+  @media only screen and (max-width:850px) {
+  
+  
+  
+    main p.one {
+      width: 60%;
+  
+    }
+  }
+  
+  @media only screen and (max-width:750px) {
+  
+    main h2 {
+      width: 60%;
+    }
+  
+    main p.one {
+      width: 70%;
+  
+    }
+  
+    header h1 {
+      font-size: 300%;
+    }
+  
+  }
+  
+  @media only screen and (max-width:660px) {
+  
+    main h2 {
+      width: 100%;
+    }
+  
+    main p.one {
+      width: 90%;
+  
+    }
+  }
+  
+  @media only screen and (max-width:550px) {
+  
+    footer {
+      position: relative;
+    }
+  }
