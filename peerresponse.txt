@@ -4,3 +4,8 @@ Make each flyer different in theme (i removed multiple flyers)
 Fix yellow shadow for readability on flyer 1
 Space around for nav bar (redid navbar entirely, and pulled it out of the flyer)
 
+
+Peer response 2:
+-Fixed absolute footers. I thought I did but it still was broken on 1080p. I use 1440p and realize now my website looks AWFUL on lower resolutions... I tried and tried, but can't figure out how to fix it.
+-Added buttons
+-Filled in placeholder information with pretty bad info, will update as I use it!

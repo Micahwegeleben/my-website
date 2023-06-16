@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="the description" />
+    <link rel="stylesheet" href="navstyles.css">
+    <title>Placeholder</title>
+    <link rel="stylesheet" href="slicknav/slicknav.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="slicknav/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        }); </script>
+</head>
+
+<body>
+    <!--Nav menu CSS all has its own stylesheet-->
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <h1><a href="#" class="current">Home</a></h1>
+        <h1><a href="index_flyer.html">Flyer</a></h1>
+        <h1><a href="index_forms.html">Forms</a></h1>
+        <h1><a href="index_about.html">Staff</a></h1>
+    </nav>
+    <!--Div encasing the main site-->
+    <main>
+        <P>Placeholder!</P>
+    </main>
+</body>
+
+</html>
